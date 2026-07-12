@@ -42,18 +42,18 @@ print("Numbers:", has_digit)
 print("Symbols:", has_symbol)
 
 if password.lower() in common_passwords:
-    print("\n❌ This is a commonly used password.")
+    print("\nThis is a commonly used password.")
     print("Password Strength: VERY WEAK")
     print("Choose a unique password.")
 else:
     print("\nScore:", score, "/5")
 
     if score == 5:
-        print("✅ Password Strength: STRONG")
+        print("Password Strength: STRONG")
     elif score >= 3:
-        print("🟡 Password Strength: MEDIUM")
+        print(" Password Strength: MEDIUM")
     else:
-        print("🔴 Password Strength: WEAK")
+        print(" Password Strength: WEAK")
     
     print("\nSuggestions to Improve Password:")
     if len(password) < 8:
